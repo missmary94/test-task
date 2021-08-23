@@ -269,7 +269,6 @@ button {
 
 .main-screen {
   height: 765px;
-  background: url("../img/bg.jpg") 0 0/contain no-repeat;
 }
 
 .main-screen__slider {
@@ -279,6 +278,7 @@ button {
   background: #fff;
   width: 560px;
   height: 458px;
+  z-index: 2;
 }
 
 .main-screen__slider .image {
@@ -296,6 +296,7 @@ button {
   width: 1155px;
   height: 147px;
   background: #fff;
+  z-index: 2;
 }
 
 .slider__body {
@@ -303,8 +304,8 @@ button {
   padding-left: 41px;
 }
 
-.slider__item:nth-child(2), .slider__item:nth-child(3), .slider__item:nth-child(4), .slider__item:nth-child(5), .slider__item:nth-child(6) {
-  display: none;
+.slider__item img {
+  position: relative;
 }
 
 .slider__icon {
@@ -362,6 +363,11 @@ button {
 .showing {
   opacity: 1;
   z-index: 2;
+}
+
+.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .link-media {
