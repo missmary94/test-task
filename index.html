@@ -15,11 +15,11 @@
         <div class="container">
             <div class="contacts">
                 <ul class="contacts__list">
-                    <li>Контроль качества</li>
-                    <li>Письмо руководителю</li>
-                    <li>Программа лояльности</li>
-                    <li>Электронный журнал</li>
-                    <li>Мероприятия</li>
+                    <li><a href="#">Контроль качества</a></li>
+                    <li><a href="#">Письмо руководителю</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                    <li><a href="#">Электронный журнал</a></li>
+                    <li><a href="#">Мероприятия</a></li>
                 </ul>
 
                 <div class="contacts__data">
@@ -46,20 +46,29 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>АУДИТ</li>
-                        <li>НАЛОГИ</li>
-                        <li>ПРАВО</li>
-                        <li>СТРУКТУРИРОВАНИЕ</li>
-                        <li>БАНКРОТСТВО</li>
-                        <li>ЛИКВИДАЦИЯ</li>
-                        <li>БУХГАЛТЕРИЯ</li>
-                        <li>РЕГИСТРАЦИЯ</li>
-                        <li>ЕЩЕ</li>
+                        <li> <a href="#">АУДИТ</a></li>
+                        <li><a href="#">НАЛОГИ</a></li>
+                        <li><a href="#">ПРАВО</a></li>
+                        <li><a href="#">СТРУКТУРИРОВАНИЕ</a></li>
+                        <li><a href="#">БАНКРОТСТВО</a></li>
+                        <li><a href="#">ЛИКВИДАЦИЯ</a></li>
+                        <li><a href="#">БУХГАЛТЕРИЯ</a></li>
+                        <li><a href="#">РЕГИСТРАЦИЯ</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a onclick="myFunction()" class="dropbtn another">ЕЩЕ
+                                    <img onclick="myFunction()" src="img/icon/arrow-down.svg" alt="arrow-down"></a>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="another">
-                    <img src="img/icon/arrow-down.svg" alt="arrow-down">
-                </div>
+
+
 
                 <div class="call">
                     <img src="img/icon/phone_black.svg" alt="phone_black">
@@ -72,179 +81,91 @@
     </header>
     <section class="main">
         <div class="container">
-            <ul id="slides">
-                <li class="slide showing">
-                    <div class="slider__item">
-                        <img src="img/bg.jpg" alt="bg">
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="slider__item">
-                        <img src="img/bg.jpg" alt="bg">
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="slider__item">
-                        <img src="img/bg.jpg" alt="bg">
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="slider__item">
-                        <img src="img/bg.jpg" alt="bg">
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="slider__item">
-                        <img src="img/bg.jpg" alt="bg">
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="slider__item">
-                        <img src="img/bg.jpg" alt="bg">
-                    </div>
-                </li>
-            </ul>
-            <div class="main-screen">
-                <div class="main-screen__slider">
-                    <div class="slider__body">
+            <div class="mySlides">
+                <div class="numbertext"> <span>1</span> / 6</div>
+                <img src="img/bg.jpg" style="width:100%">
+                <div class="title">Помогаем бизнесу</div>
+                <div class="descr">выходить из сложных <br> ситуаций и упреждать их <br>
+                    возникновение!</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"><span>2</span> / 6</div>
+                <img src="img/bg.jpg" style="width:100%">
+                <div class="title">Помогаем бизнесу</div>
+                <div class="descr">выходить из сложных <br> ситуаций и упреждать их <br>
+                    возникновение!</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"><span>3</span> / 6</div>
+                <img src="img/bg.jpg" style="width:100%">
+                <div class="title">Помогаем бизнесу</div>
+                <div class="descr">выходить из сложных <br> ситуаций и упреждать их <br>
+                    возникновение!</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"><span>4</span> / 6</div>
+                <img src="img/bg.jpg" style="width:100%">
+                <div class="title">Помогаем бизнесу</div>
+                <div class="descr">выходить из сложных <br> ситуаций и упреждать их <br>
+                    возникновение!</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"><span>5</span> / 6</div>
+                <img src="img/bg.jpg" style="width:100%">
+                <div class="title">Помогаем бизнесу</div>
+                <div class="descr">выходить из сложных <br> ситуаций и упреждать их <br>
+                    возникновение!</div>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"><span>6</span> / 6</div>
+                <img src="img/bg.jpg" style="width:100%">
+                <div class="title">Помогаем бизнесу</div>
+                <div class="descr">выходить из сложных <br> ситуаций и упреждать их <br>
+                    возникновение!</div>
+            </div>
 
-                        <ul id="slides">
-                            <li class="slide showing">
-                                <div class="slider__item">
+            <a class="prev" onclick="plusSlides(-1)"><img class="slider__arrow" src="img/icon/left.svg"
+                    alt="arrow-left"></a>
+            <a class="next" onclick="plusSlides(1)"><img class="slider__arrow" src="img/icon/right.svg"
+                    alt="arrow-right"></a>
+            <div class="block-white">
+                <div class="img1"><img src="img/icon/play.png" alt="play"></div>
+                <div class="img2"><img src="img/icon/Russia1.png" alt="Russia1"></div>
 
-                                    <div class="slider__icon">
-                                        <a class="prev" onclick="plusSlides(-1)"><img class="slider__arrow"
-                                                src="img/icon/left.svg" alt="arrow-left"></a>
-                                        <p><span>1</span>/6</p>
-                                        <a class="next" onclick="plusSlides(1)"><img class="slider__arrow"
-                                                src="img/icon/right.svg" alt="arrow-right">
-                                        </a>
-
-                                    </div>
-                                    <p class="slider__title">Помогаем бизнесу</p>
-                                    <div class="slider__text">выходить из сложных <br> ситуаций и упреждать их <br>
-                                        возникновение!</div>
-
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="slider__item">
-                                    <div class="slider__icon">
-                                        <a class="prev" onclick="plusSlides(-1)"><img class="slider__arrow"
-                                                src="img/icon/left.svg" alt="arrow-left"></a>
-                                        <p><span>2</span>/6</p>
-                                        <a class="next" onclick="plusSlides(1)"><img class="slider__arrow"
-                                                src="img/icon/right.svg" alt="arrow-right">
-                                    </div>
-                                    <p class="slider__title">Помогаем бизнесу</p>
-                                    <div class="slider__text">выходить из сложных <br> ситуаций и упреждать их <br>
-                                        возникновение!</div>
-
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="slider__item">
-                                    <div class="slider__icon">
-                                        <a class="prev" onclick="plusSlides(-1)" onclick="plusSlides(-1)><img class="
-                                            slider__arrow" src="img/icon/left.svg" alt="arrow-left"></a>
-                                        <p><span>3</span>/6</p>
-                                        <a class="next" onclick="plusSlides(1)"><img class="slider__arrow"
-                                                src="img/icon/right.svg" alt="arrow-right">
-                                    </div>
-                                    <p class="slider__title">Помогаем бизнесу</p>
-                                    <div class="slider__text">выходить из сложных <br> ситуаций и упреждать их <br>
-                                        возникновение!</div>
-
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="slider__item">
-                                    <div class="slider__icon">
-                                        <a class="prev" onclick="plusSlides(-1)"><img class="slider__arrow"
-                                                src="img/icon/left.svg" alt="arrow-left"></a>
-                                        <p><span>4</span>/6</p>
-                                        <a class="next" onclick="plusSlides(1)"><img class="slider__arrow"
-                                                src="img/icon/right.svg" alt="arrow-right">
-                                    </div>
-                                    <p class="slider__title">Помогаем бизнесу</p>
-                                    <div class="slider__text">выходить из сложных <br> ситуаций и упреждать их <br>
-                                        возникновение!</div>
-
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="slider__item">
-                                    <div class="slider__icon">
-                                        <a class="prev" onclick="plusSlides(-1)"><img class="slider__arrow"
-                                                src="img/icon/left.svg" alt="arrow-left"></a>
-                                        <p><span>5</span>/6</p>
-                                        <a class="next" onclick="plusSlides(1)"><img class="slider__arrow"
-                                                src="img/icon/right.svg" alt="arrow-right">
-                                    </div>
-                                    <p class="slider__title">Помогаем бизнесу</p>
-                                    <div class="slider__text">выходить из сложных <br> ситуаций и упреждать их <br>
-                                        возникновение!</div>
-
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="slider__item">
-                                    <div class="slider__icon">
-                                        <a class="prev" onclick="plusSlides(-1)"><img class="slider__arrow"
-                                                src="img/icon/left.svg" alt="arrow-left"></a>
-                                        <p><span>6</span>/6</p>
-                                        <a class="next" onclick="plusSlides(1)"><img class="slider__arrow"
-                                                src="img/icon/right.svg" alt="arrow-right">
-                                    </div>
-                                    <p class="slider__title">Помогаем бизнесу</p>
-                                    <div class="slider__text">выходить из сложных <br> ситуаций и упреждать их <br>
-                                        возникновение!</div>
-
-                                </div>
-                            </li>
-                        </ul>
-
-
-                    </div>
-
-                    <div class="image">
-                        <img src="img/icon/play.png" alt="play">
-                        <img src="img/icon/Russia1.png" alt="Russia1">
-                    </div>
-
+            </div>
+            <div class="link">
+                <div class="link-media">
+                    <a href="#">
+                        <p>СМИ</p>
+                    </a>
+                    <div class="color-overlay"></div>
                 </div>
-                <div class="main-screen__link">
-                    <div class="link-media">
-                        <a href="#">
-                            <p>СМИ</p>
-                        </a>
-                        <div class="color-overlay"></div>
-                    </div>
 
-                    <div class="link-events">
+                <div class="link-events">
+                    <a href="#">
+                        <p>Мероприятия</p>
+                    </a>
+                </div>
+                <div class="link-news">
+                    <div class="link-news__busines">
                         <a href="#">
-                            <p>Мероприятия</p>
+                            <p>Бизнес завтрак</p>
                         </a>
                     </div>
-                    <div class="link-news">
-                        <div class="link-news__busines">
-                            <a href="#">
-                                <p>Бизнес завтрак</p>
-                            </a>
-                        </div>
-                        <div class="link-news__seporator">
+                    <div class="link-news__seporator">
 
-                        </div>
-                        <div class="link-news__new">
-                            <div class="title">27 сентября ‘19</div>
-                            <div class="descr">Налоговая безопасность <br> 2019 г. Время перемен и <br> изменений.</div>
-                        </div>
+                    </div>
+                    <div class="link-news__new">
+                        <div class="title">27 сентября ‘19</div>
+                        <div class="descr">Налоговая безопасность <br> 2019 г. Время перемен и <br> изменений.</div>
                     </div>
                 </div>
             </div>
 
-
         </div>
+
+
+
     </section>
     <script src="js/js.js"></script>
 </body>

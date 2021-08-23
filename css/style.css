@@ -115,6 +115,7 @@ h6 {
   margin: 0 auto;
   width: 1920px;
   background: #fff;
+  position: relative;
 }
 
 .contacts {
@@ -213,9 +214,48 @@ nav {
   margin-right: 40px;
 }
 
-.menu ul li:last-child {
-  margin-right: 0;
-  margin-right: 9px;
+.menu ul li a img {
+  margin-left: 9px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {
+  display: block;
 }
 
 .logo {
@@ -267,107 +307,85 @@ button {
   margin: 0 auto;
 }
 
-.main-screen {
-  height: 765px;
+.mySlides {
+  display: none;
 }
 
-.main-screen__slider {
-  position: relative;
-  top: 160px;
-  left: 377px;
-  background: #fff;
-  width: 560px;
-  height: 458px;
-  z-index: 2;
-}
-
-.main-screen__slider .image {
+.numbertext {
   position: absolute;
-  display: flex;
-  left: 0;
-  bottom: 0;
+  left: 484px;
+  top: 213px;
+  z-index: 3;
 }
 
-.main-screen__link {
-  display: flex;
-  position: relative;
-  top: 160px;
-  left: 377px;
-  width: 1155px;
-  height: 147px;
-  background: #fff;
-  z-index: 2;
-}
-
-.slider__body {
-  padding-top: 51px;
-  padding-left: 41px;
-}
-
-.slider__item img {
-  position: relative;
-}
-
-.slider__icon {
-  display: flex;
-}
-
-.slider__icon img {
-  width: 39px;
-  height: 39px;
-}
-
-.slider__icon p {
-  font-size: 18px;
-  line-height: 23px;
-  margin-right: 27px;
-  margin-left: 27px;
-}
-
-.slider__icon p span {
+.numbertext span {
   font-weight: 500;
   font-size: 28px;
   line-height: 35px;
 }
 
-.slider__arrow {
-  cursor: pointer;
-}
-
-.slider__title {
+.title {
+  position: absolute;
+  top: 293px;
+  left: 418px;
   font-weight: 500;
   font-size: 38px;
   line-height: 48px;
   color: #1e1744;
-  margin-top: 42px;
+  z-index: 3;
 }
 
-.slider__text {
+.descr {
+  position: absolute;
+  top: 341px;
+  left: 418px;
   font-weight: 300;
   font-size: 38px;
   line-height: 48px;
   color: #1e1744;
+  z-index: 3;
 }
 
-#slides {
-  position: relative;
-  list-style-type: none;
-}
-
-.slide {
+.prev {
   position: absolute;
-  opacity: 0;
-  z-index: 1;
+  left: 418.5px;
+  top: 211.5px;
+  z-index: 3;
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
 }
 
-.showing {
-  opacity: 1;
+.next {
+  position: absolute;
+  left: 542.5px;
+  top: 211.5px;
+  z-index: 3;
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+}
+
+.block-white {
+  position: absolute;
+  width: 560px;
+  height: 458px;
+  background: #fff;
+  left: 377px;
+  top: 160px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.link {
+  display: flex;
+  left: 377px;
+  top: 618px;
+  position: absolute;
+  width: 1155px;
+  height: 147.5px;
+  background: #fff;
   z-index: 2;
-}
-
-.active {
-  opacity: 1;
-  z-index: 1;
 }
 
 .link-media {
@@ -375,12 +393,6 @@ button {
   position: relative;
   width: 164px;
   height: 147px;
-}
-
-.link-media .color-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(244, 8, 8, 0.85);
 }
 
 .link-media p {
@@ -398,6 +410,12 @@ button {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(244, 8, 8, 0.85);
 }
 
 .link-events {
@@ -459,17 +477,24 @@ button {
   padding: 27px 0 0 47px;
 }
 
-.title {
+.link-news__new .title {
+  position: absolute;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   color: #3d5695;
-  margin-bottom: 11px;
+  z-index: 3;
+  top: 27px;
+  left: 47px;
 }
 
-.descr {
+.link-news__new .descr {
+  position: absolute;
   font-weight: normal;
   font-size: 17px;
   line-height: 21px;
   color: #1e1744;
+  z-index: 3;
+  left: 46px;
+  top: 58px;
 }
